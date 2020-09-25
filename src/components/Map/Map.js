@@ -20,7 +20,7 @@ const Map = ({ data }) => {
           lng: markerData.latlng.longitude,
         },
         map,
-        class: 'hello',
+        class: 'markers',
         iconSize: (100, 100),
       });
       google.maps.event.addListener(marker, 'click', (function (mapMarker, i) {
