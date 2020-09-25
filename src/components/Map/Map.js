@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect } from 'react';
 import PropTypes from 'prop-types';
 import { createScriptLoadMap } from './MapService';
 
@@ -36,8 +36,8 @@ const Map = ({ data }) => {
     if (data.length !== 0) {
       createScriptLoadMap().then(() => {
         window.globalMap.setCenter({
-          lat: data[0].latlng.latitude,
-          lng: data[0].latlng.longitude,
+          lat: data[0].latlng ? data[0].latlng.latitude : 37.7749,
+          lng: data[0].latlng ? data[0].latlng.longitude : -122.4194,
         });
         loaderMarkerToMap(window.globalMap);
       });

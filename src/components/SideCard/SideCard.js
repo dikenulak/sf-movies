@@ -23,7 +23,6 @@ const SideCard = ({ clear, data, onClear }) => (
           <div>Locations:</div>
           {uniqueItems(data, 'locations').map(d => (
             <div className="side__bar__locations__info" key={d.locations}>
-              {console.log(d.latlng)}
               {d.locations}
             </div>
           ))}
