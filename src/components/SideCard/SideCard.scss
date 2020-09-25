@@ -1,0 +1,40 @@
+.side__bar {
+	position: absolute;
+	top: 1.6%;
+	right: 0.7%;
+	width: 300px;
+	background: white;
+	padding: 25px;
+	max-height: calc(100vh - 90px);
+  overflow: auto;
+  border-radius: 2px;
+	.cross {
+		cursor: pointer;
+		text-decoration: underline;
+		display: flex;
+    flex-direction: row-reverse;
+		svg {
+			width: 20px;
+			height: 20px;
+		}
+	}
+	.side__bar__info {
+		font-size: 14px;
+		.side__bar__title {
+			span {
+				color: var(--main-text-color);
+				font-weight: 600;
+			}
+		}
+		.side__bar__locations__info {
+			border-radius: 20px;
+			padding: 4px;
+			display: inline-block;
+			border: 2px solid var(--main-text-color);
+			margin: 4px;
+			font-weight: 600;
+			background: #fcf6de;
+			font-size: 11px;
+		}
+	}
+}

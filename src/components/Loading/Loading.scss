@@ -1,0 +1,14 @@
+.loader {
+	position: absolute;
+	bottom: 0;
+	left: 40%;
+	z-index: 9;
+	padding: 20px;
+	background: #ffffff;
+	border-radius: 5px;
+	span {
+		font-size: 18px;
+    color: #ff5252;
+    font-weight: 600;
+	}
+}
