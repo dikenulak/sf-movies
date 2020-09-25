@@ -3,7 +3,7 @@ const devConfig = {
   baseUrl: `${url}/api/v1/list`,
 };
 const prodConfig = {
-  baseUrl: `${window.location.origin}/api/v1/list`,
+  baseUrl: 'https://sf-movies-backends.herokuapp.com/api/v1/list',
 };
 if (process.env.NODE_ENV === 'production') {
   module.exports = prodConfig;
